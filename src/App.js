@@ -85,7 +85,7 @@ function App() {
     setProposed(filteredProposed);
     const filteredAssigned = taskList.filter((t) => t.category === "assigned");
     setAssigned(filteredAssigned);
-  }, [state]);
+  }, [state, taskList]);
 
   return (
     <div className="App">
